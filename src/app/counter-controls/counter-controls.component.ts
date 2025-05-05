@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-
-import { CounterService } from '../counter.service';
+import { Component, inject } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { increment } from '../store/counter.action';
 
 @Component({
   selector: 'app-counter-controls',
@@ -9,13 +9,12 @@ import { CounterService } from '../counter.service';
   standalone: true,
 })
 export class CounterControlsComponent {
-  constructor(private counterService: CounterService) {}
+  private _store: Store<{ counter: number }> = inject(Store);
 
   increment() {
-    this.counterService.increment();
+    this._store.dispatch(increment());
   }
 
   decrement() {
-    this.counterService.decrement();
   }
 }
