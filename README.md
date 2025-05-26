@@ -38,7 +38,7 @@ This project is a mini **Angular** application demonstrating state management wi
 
 ## 🎖️ Credits
 
-This project is built as part of the **Udemy Course: Angular - The Complete Guide (2025 Edition)**[https://www.udemy.com/course-dashboard-redirect/?course_id=756150] by Maximilian Schwarzmüller.
+This project is built as part of the [**Udemy Course: Angular - The Complete Guide (2025 Edition)**](https://www.udemy.com/course-dashboard-redirect/?course_id=756150) by Maximilian Schwarzmüller.
 
 ---
 
